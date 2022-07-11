@@ -85,7 +85,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; // component of dmenucmd, manipulated in spawn()
 static const char *dmenucmd[] = {
     "dmenu_run", "-m",  dmenumon,  "-fn", dmenufont, "-nb", color_nbg, "-nf",
-    color_nfg,   "-sb", color_sbg, "-sf", color_sfg, "-b",  NULL};
+    color_nfg,   "-sb", color_sbg, "-sf", color_sfg, NULL};
 static const char *termcmd[] = {"kitty", NULL};
 static const char *shufbgcmd[] = {"shufbg", NULL};
 static const char *browsercmd[] = {"firefox", NULL};
