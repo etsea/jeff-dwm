@@ -94,6 +94,7 @@ static Key keys[] = {
     // {modifier, key, function, argument},
     {MODKEY | ShiftMask, XK_b, spawn, {.v = shufbgcmd}}, // change wallpaper
     {MODKEY, XK_Return, spawn, {.v = dmenucmd}},         // spawn dmenu launcher
+    {MODKEY, XK_p, spawn, {.v = dmenucmd}},              // alternate dmenu key
     {MODKEY | ShiftMask, XK_Return, spawn, {.v = termcmd}}, // spawn terminal
     {MODKEY, XK_b, spawn, {.v = browsercmd}},               // spawn browser
     {MODKEY, XK_s, togglebar, {0}},                         // toggle status bar
