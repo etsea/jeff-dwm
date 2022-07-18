@@ -22,7 +22,7 @@ static const char *colors[][3] = {
 };
 
 static const unsigned int barfgalpha = 0xff; // 0-255 alpha value for bar fg
-static const unsigned int barbgalpha = 0xd0; // 0-255 alpha value for bar bg
+static const unsigned int barbgalpha = 0xd9; // 0-255 alpha value for bar bg
 static const unsigned int barbdalpha = 0xff; // 0-255 alpha value for bar border
 
 static const unsigned int alphas[][3] = {
@@ -86,7 +86,7 @@ static char dmenumon[2] = "0"; // component of dmenucmd, manipulated in spawn()
 static const char *dmenucmd[] = {
     "dmenu_run", "-m",  dmenumon,  "-fn", dmenufont, "-nb", color_nfg, "-nf",
     color_nbg,   "-sb", color_sfg, "-sf", color_sbg, NULL};
-static const char *termcmd[] = {"kitty", NULL};
+static const char *termcmd[] = {"st", NULL};
 static const char *shufbgcmd[] = {"shufbg", NULL};
 static const char *browsercmd[] = {"firefox", NULL};
 
