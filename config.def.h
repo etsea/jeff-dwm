@@ -87,16 +87,16 @@ static const char *dmenucmd[] = {
     "dmenu_run", "-m",  dmenumon,  "-fn", dmenufont, "-nb", color_nfg, "-nf",
     color_nbg,   "-sb", color_sfg, "-sf", color_sbg, NULL};
 static const char *termcmd[] = {"st", NULL};
-static const char *shufbgcmd[] = {"shufbg", NULL};
-static const char *browsercmd[] = {"firefox", NULL};
+static const char *browsercmd[] = {"surf", "start.duckduckgo.com", NULL};
+static const char *altbrowsercmd[] = {"firefox", NULL};
 
 static Key keys[] = {
     // {modifier, key, function, argument},
-    {MODKEY | ShiftMask, XK_b, spawn, {.v = shufbgcmd}}, // change wallpaper
     {MODKEY, XK_Return, spawn, {.v = dmenucmd}},         // spawn dmenu launcher
     {MODKEY, XK_p, spawn, {.v = dmenucmd}},              // alternate dmenu key
     {MODKEY | ShiftMask, XK_Return, spawn, {.v = termcmd}}, // spawn terminal
     {MODKEY, XK_b, spawn, {.v = browsercmd}},               // spawn browser
+    {MODKEY | ShiftMask, XK_b, spawn, {.v = altbrowsercmd}}, // spawn alt browser
     {MODKEY, XK_s, togglebar, {0}},                         // toggle status bar
     {MODKEY, XK_j, focusstack, {.i = +1}},                  // focus next window
     {MODKEY, XK_k, focusstack, {.i = -1}},                  // focus last window
